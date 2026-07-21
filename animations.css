@@ -1,0 +1,399 @@
+/* ==========================================
+   SAINIHISHTHA EDUCATION
+   ANIMATIONS.CSS
+========================================== */
+
+/* ==========================================
+   TRANSITION
+========================================== */
+
+*{
+    transition:all .3s ease;
+}
+
+/* ==========================================
+   KEYFRAMES
+========================================== */
+
+/* Fade Up */
+
+@keyframes fadeUp{
+
+    0%{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Fade Down */
+
+@keyframes fadeDown{
+
+    0%{
+        opacity:0;
+        transform:translateY(-60px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Fade Left */
+
+@keyframes fadeLeft{
+
+    0%{
+        opacity:0;
+        transform:translateX(-80px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* Fade Right */
+
+@keyframes fadeRight{
+
+    0%{
+        opacity:0;
+        transform:translateX(80px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* Zoom */
+
+@keyframes zoomIn{
+
+    0%{
+        opacity:0;
+        transform:scale(.7);
+    }
+
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* Floating */
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* Rotate */
+
+@keyframes rotate{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* Pulse */
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ==========================================
+   HERO ANIMATION
+========================================== */
+
+.hero-tag{
+    animation:fadeDown 1s ease;
+}
+
+.hero h1{
+    animation:fadeLeft 1.2s ease;
+}
+
+.hero p{
+    animation:fadeRight 1.4s ease;
+}
+
+.hero-buttons{
+    animation:fadeUp 1.6s ease;
+}
+
+/* ==========================================
+   SECTION TITLES
+========================================== */
+
+.section-title{
+    animation:fadeUp 1s ease;
+}
+
+/* ==========================================
+   COURSE CARD
+========================================== */
+
+.course-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.course-card img{
+
+    transition:.5s;
+
+}
+
+.course-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   WHY CARD
+========================================== */
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.why-card:hover i{
+
+    animation:pulse .8s;
+
+}
+
+/* ==========================================
+   TRUSTED CARD
+========================================== */
+
+.trusted-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.trusted-card:hover i{
+
+    animation:floating 1.5s infinite;
+
+}
+
+/* ==========================================
+   NOTE CARD
+========================================== */
+
+.note-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.note-card:hover i{
+
+    animation:rotate 1s linear;
+
+}
+
+/* ==========================================
+   TEAM IMAGE
+========================================== */
+
+.team-banner img{
+
+    transition:.6s;
+
+}
+
+.team-banner:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   BUTTON HOVER
+========================================== */
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.course-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.register-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   FOOTER LINKS
+========================================== */
+
+.footer a:hover{
+
+    padding-left:8px;
+
+}
+
+/* ==========================================
+   NEWSLETTER BUTTON
+========================================== */
+
+.newsletter button:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   SOCIAL ICON (Future)
+========================================== */
+
+.social-icons a:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ==========================================
+   IMAGE HOVER
+========================================== */
+
+img{
+
+    transition:.5s;
+
+}
+
+/* ==========================================
+   SCROLL REVEAL
+========================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   FLOATING CLASS
+========================================== */
+
+.floating{
+
+    animation:floating 3s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   ZOOM CLASS
+========================================== */
+
+.zoom{
+
+    animation:zoomIn 1s ease;
+
+}
+
+/* ==========================================
+   FADE CLASSES
+========================================== */
+
+.fade-up{
+
+    animation:fadeUp 1s ease;
+
+}
+
+.fade-left{
+
+    animation:fadeLeft 1s ease;
+
+}
+
+.fade-right{
+
+    animation:fadeRight 1s ease;
+
+}
+
+.fade-down{
+
+    animation:fadeDown 1s ease;
+
+}
+
+/* ==========================================
+   END
+========================================== */
+
